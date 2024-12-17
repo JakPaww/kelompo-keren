@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+   
+    background-color: #e0fffe;
+}
+.menu-tiga-titik {
+    display: flex; /* Mengatur titik berjejer secara horizontal */
+    flex-direction: row; /* Mengatur titik secara vertikal */
+    cursor: pointer; /* Menunjukkan bahwa ini bisa diklik */   
+}
+
+.titik {
+    display: flex;
+    width: 5px; /* Lebar titik */
+    height: 5px; /* Tinggi titik */
+    background-color: #000000; /* Warna titik */
+    border-radius: 50%; /* Membuat titik menjadi bulat */
+    margin: 30px 2px; /* Menambahkan jarak antara titik */
+    justify-content: right;
+}
+button{
+    background: white;
+    border: 1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+main {
+    display: grid;
+    justify-content: center;
+    
+    grid-template-rows: 30vh;
+    gap:2vh;
+    align-items: center;
+    text-align: center;
+}
+main img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px ;
+    margin-bottom: 3vh;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    bottom: 0;
+    position: fixed;
+}
